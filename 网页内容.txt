@@ -1,0 +1,98 @@
+SnapObjects ORM
+Simple, Powerful, Ultra-Fast ORM for .NET
+SnapObjects ORM makes .NET development a snap!  It is unbelievably simple yet does not skimp on features.  It gives you full control over generated SQL.  And it performs practically like ADO.NET.
+
+Model
+The Model maps columns to database tables and contains the related SQL.  The SQL of the Model is generated based on various attributes, which gives developers control over the SQL.  And the Model can represent complex relationships, such as Master-Detail-Detail through nesting of the Model.
+
+Defines SQL Query
+SqlColumnAttribute
+FromTableAttribute
+SqlWhereAttribute
+SqlGroupAttribute
+SqlHavingAttribute
+SqlJoinAttribute
+SqlUnionAttribute
+SqlParameterAttribute
+TopAttribute
+
+Defines SQL Insert/Update/Delete operations for the mapped table
+SqlColumnAttribute
+IdentityAttribute
+PropertySaveAttribute
+UpdateWhereStrategyAttribute
+
+SQLModelMapper
+The SQLModelMapper is a transaction-oriented data manipulation component.  It provides objects and methods to simplify your database CRUD operations, and it applies automatic transaction management to tracked items.  Tracked items can be executed in bulk to boost performance.
+
+SQLBuilder
+The SQLBuilder constructs SQL statements in a programmatic and database-agnostic way.  Specifically, it builds the syntax structure and works together with SnapObjects¡¯ DataContext object to generate database-specific SQL statements.
+
+Build
+Builds the SQL syntax structure.
+Select statement
+Insert statement
+Delete statement
+Update statement
+
+Validate
+Validates the raw SQL string generated for the specified database.
+Validate
+
+SQLExecutor
+SQLExecutor is a set of database manipulation interfaces that encapsulate the core components of ADO.NET.  With SQLExecutor you can directly execute dynamic SQL statements, perform SQLBuilder object functions, and do model queries.
+
+Execute
+Executes a command and returns the number of affected rows.
+
+Execute
+ExecuteProcedure
+
+Query
+Executes a query and maps the result.
+
+Scalar
+Select
+SelectOne
+SelectLazy
+SelectProcedure
+
+Async
+Executes SQL statements in an asynchronous manner.
+
+ExecuteAsync()
+ExecuteProcedureAsync()
+ScalarAsync()
+SelectAsync()
+SelectLazyAsync()
+SelectOneAsync()
+SelectProcedureAsync()
+
+Execute
+Submit all the tracked database operations in models, SQLs or actions to database in one shot to execute and let ModelMapper manage the transaction for you.
+
+Plain Load
+Executes queries defined in the model and loads result set into a self-generated object.
+
+Load
+LoadAll
+LoadByKey
+LoadByPage
+
+Defines SQL Insert/Update/Delete operations for the mapped table
+SqlColumnAttribute
+IdentityAttribute
+PropertySaveAttribute
+UpdateWhereStrategyAttribute
+
+Features
+Model
+
+The Model maps columns to database tables and contains the related SQL.  The SQL of the Model is generated based on various attributes, which gives developers control over the SQL.  And the Model can represent complex relationships, such as Master-Detail-Detail through nesting of the Model.
+
+SnapObjects ORM
+Simple, Powerful, Ultra-Fast ORM for .NET
+SnapObjects ORM makes .NET development a snap!  It is unbelievably simple yet does not skimp on features.  It gives you full control over generated SQL.  And it performs practically like ADO.NET.
+
+
+https://www.devmagic.com/sites/default/files/company/cp-ab-banner.jpg?fid=130
